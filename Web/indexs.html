@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfolio Website">
+    <meta name="description" content="This my simple portpolio website for me create by HTML Tailwindcss and JavaScript">
+    <!-- --- open graph protocol --- -->
+    <meta property="og:title" content="Web Portfolio" />
+    <meta property="og:type" content="Profesernal Portfolio" />
+    <meta property="og:url" content="https://www.CDX.Webfolio/" />
+    <meta property="og:image" content="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Cambodia/angkor-wat-cambodia-aerial-xlarge.jpg" />
+    <link rel="icon" href="./images/icon web.png">
+    <title>CDX.Webfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-100 font-serif">
+    <div class="bg-yellow-100">
+
+        <header id="home">
+            <nav class="bg-yellow-200 backdrop-blur-xl bg-opacity-25 shadow-lg p-4 fixed w-full top-0 z-50 rounded-b-2xl">
+                <div class="container mx-auto flex justify-between items-center" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="100">
+                    <a href="#" class="text-2xl font-bold text-gray-900">CDX.Folio</a>
+                    <ul class="hidden lg:flex space-x-6 text-gray-700">
+                        <li><a href="#home" class="hover:text-orange-500">Home</a></li>
+                        <li><a href="#about" class="hover:text-orange-500">About</a></li>
+                        <li><a href="#resume" class="hover:text-orange-500">Resume</a></li>
+                        <li><a href="#portfolio" class="hover:text-orange-500">Portfolio</a></li>
+                        <li><a href="#services" class="hover:text-orange-500">Services</a></li>
+                        <li><a href="#contact" class="hover:text-orange-500">Contact</a></li>
+                    </ul>
+                    <div class="flex gap-3 items-center">
+                        <span class="flex gap-3">
+                            <i class="fa-brands fa-facebook text-xl text-gray-600 hover:text-red-400 duration-500"></i>
+                            <i class="fa-brands fa-square-instagram text-xl text-gray-600 hover:text-red-400 duration-500"></i>
+                            <i class="fa-brands fa-invision text-xl text-gray-600 hover:text-red-400 duration-500"></i>
+                            <i class="fa-brands fa-github text-xl text-gray-600 hover:text-red-400 duration-500"></i>
+                        </span>
+                        <button class="lg:hidden text-2xl text-violet-950" id="menu-toggle">☰</button>
+                    </div>
+                </div>
+                <!-- Mobile Menu -->
+                <ul id="mobile-menu" class="hidden flex-col bg-opacity-20 filter backdrop-blur-x w-full p-4 space-y-4 text-gray-700 lg:hidden">
+                    <li><a href="#home" class="block py-2 px-4 hover:bg-gray-100 rounded">Home</a></li>
+                    <li><a href="#about" class="block py-2 px-4 hover:bg-gray-100 rounded">About</a></li>
+                    <li><a href="#resume" class="block py-2 px-4 hover:bg-gray-100 rounded">Resume</a></li>
+                    <li><a href="#portfolio" class="block py-2 px-4 hover:bg-gray-100 rounded">Portfolio</a></li>
+                    <li><a href="#services" class="block py-2 px-4 hover:bg-gray-100 rounded">Services</a></li>
+                    <li><a href="#contact" class="block py-2 px-4 hover:bg-gray-100 rounded">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Hero Section -->
+            <section class="h-screen flex flex-col lg:flex-row items-center justify-center text-center px-6 md:px-12 mt-20 md:mt-20 lg:mt-10">
+                <div class="w-full text-center lg:text-left order-2 lg:order-1 mt-20 lg:mt-0" data-aos="fade-right" data-aos-duration="1500">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900">Crafting Digital <br> Experiences with Passion</h1>
+                    <p class="text-gray-600 mt-4">Transforming ideas into elegant solutions through creative design and innovative development.</p>
+                    <div class="mt-6 space-x-4">
+                        <button class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600">View My Work</button>
+                        <button class="border border-orange-500 text-orange-500 px-6 py-3 rounded-lg hover:bg-orange-100">Let's Connect</button>
+                    </div>
+                    <div class="flex justify-center lg:justify-start md:justify-center space-x-8 mt-10">
+                        <div class="text-center">
+                            <span class="text-3xl font-bold text-gray-900">5+</span>
+                            <p class="text-gray-600">Years Experience</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-3xl font-bold text-gray-900">100+</span>
+                            <p class="text-gray-600">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-3xl font-bold text-gray-900">50+</span>
+                            <p class="text-gray-600">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center relative order-1 lg:order-2" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="absolute bg-yellow-200 bg-opacity-40 rounded-full w-72 h-72 md:w-96 md:h-96 lg:w-80 lg:h-80 top-10 lg:top-0 lg:left-0 left-10 z-1 animate-pulse"></div>
+                    <img src="./images/image home.png" alt="Hero Image" class="w-[24rem] md:w-[80rem] mt-14 md:mt-0 lg:mt-0 lg:w-[70rem] rounded-lg shadow-lg lg:shadow-none transform transition duration-500 hover:scale-105 animate-float">
+                </div>
+            </section>
+        </header>
+
+        <section id="about" class="pt-20 px-4 md:px-8 lg:px-16">
+            <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1400">
+                <h2 class="text-3xl font-bold text-gray-800">About</h2>
+                <p class="text-gray-600 mt-2">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+            </div>
+            <div class="max-w-6xl mx-auto grid md:grid-cols-1 lg:grid-cols-2 gap-8 items-center" >
+                <div class="flex justify-center" data-aos="zoom-in-right" data-aos-duration="1300">
+                    <div class="relative w-[90%] bg-white bg-opacity-5 flex justify-center items-center p-4 rounded-lg shadow-lg">
+                        <img src="./images/image about me.jpg" alt="Profile" 
+                            class="rounded-lg w-[95%] shadow-lg transform transition duration-500 hover:scale-105">
+                    </div>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="1300">
+                    <h3 class="text-xl font-bold text-orange-500">About Me</h3>
+                    <h2 class="text-2xl font-bold text-gray-800 mt-2">UI/UX Designer & Web Developer</h2>
+                    <p class="text-gray-600 mt-4">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <div class="bg-yellow-600 bg-opacity-15 p-6 rounded-lg shadow-lg mt-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 font-sans">
+                            <p><span class="font-serif text-lg text-black">Name :</span class = "font-semibold text-amber-950"> Eliot Johnson</p>
+                            <p><span class="font-serif text-lg text-black">Phone :</span class = "font-semibold text-amber-950"> +123 456 7890</p>
+                            <p><span class="font-serif text-lg text-black">Age :</span class = "font-semibold text-amber-950"> 26 Years</p>
+                            <p><span class="font-serif text-lg text-black">Email :</span class = "font-semibold text-amber-950"> email@example.com</p>
+                            <p><span class="font-serif text-lg text-black">Occupation :</span class = "font-semibold text-amber-950"> Lorem Engineer</p>
+                            <p><span class="font-serif text-lg text-black">Nationality :</span class = "font-semibold text-amber-950"> Ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up" data-aos-duration="1400">
+                <div class="bg-yellow-50 bg-opacity-10 p-6 rounded-lg shadow-lg" >
+                    <h3 class="text-lg font-bold text-gray-800">HTML</h3>
+                    <p class="text-gray-600 mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                    <div class="relative pt-2">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-8">
+                            <div class="bg-orange-500 h-2.5 rounded-full relative" style="width: 90%;"></div>
+                            <span class="text-sm text-gray-700 absolute right-4 font-sans bottom-4">90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 bg-opacity-10  p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-bold text-gray-800">CSS</h3>
+                    <p class="text-gray-600 mt-2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                    <div class="relative pt-2">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-8">
+                            <div class="bg-orange-500 h-2.5 rounded-full relative" style="width: 90%;"></div>
+                            <span class="text-sm text-gray-700 absolute right-4 bottom-4 font-sans">90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 bg-opacity-10  p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-bold text-gray-800">JavaScript</h3>
+                    <p class="text-gray-600 mt-2">Neque porro quisquam est qui dolorem ipsum quia dolor.</p>
+                    <div class="relative pt-2">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mt-8">
+                            <div class="bg-orange-500 h-2.5 rounded-full relative" style="width: 80%;"></div>
+                            <span class="text-sm absolute right-4 bottom-4 text-gray-700 font-sans">80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-yellow-50 bg-opacity-10  p-6 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-bold text-gray-800">Photoshop</h3>
+                    <p class="text-gray-600 mt-2">Quis autem vel reprehenderit qui in ea voluptate.</p>
+                    <div class="relative pt-2">
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 relative mt-8">
+                            <span class="text-sm absolute right-4 bottom-4 text-gray-700 font-sans">55%</span>
+                            <div class="bg-orange-500 h-2.5 rounded-full" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-20 lg:pt-28 px-4 md:px-16" id="resume" data-aos="fade-up" data-aos-duration="1200">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Resume</h2>
+                <p class="text-gray-600 mt-2">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+            </div>
+        
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800">Work Experience</h3>
+                    <p class="text-gray-600 mt-1 mb-6">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+                    
+                    <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Etiam Industries</h4>
+                        <p class="text-gray-500">Jun, 2023 - Current</p>
+                        <h5 class="text-md font-bold mt-2">Project Lead</h5>
+                        <p class="text-gray-600">Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis. Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Nullam Corp</h4>
+                        <p class="text-gray-500">2019 - 2023</p>
+                        <h5 class="text-md font-bold mt-2">Senior graphic design specialist</h5>
+                        <p class="text-gray-600">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-500 pl-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Stepping Stone Ltd.</h4>
+                        <p class="text-gray-500">2015-2019</p>
+                        <h5 class="text-md font-bold mt-2">Graphic design specialist</h5>
+                        <p class="text-gray-600">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                </div>
+        
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800">My Education</h3>
+                    <p class="text-gray-600 mt-1 mb-6">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing.</p>
+                    
+                    <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Vestibulum University</h4>
+                        <p class="text-gray-500">2017-2019</p>
+                        <h5 class="text-md font-bold mt-2">Diploma in Consequat</h5>
+                        <p class="text-gray-600">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-500 pl-6 mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Nullam Corp</h4>
+                        <p class="text-gray-500">2019 - 2023</p>
+                        <h5 class="text-md font-bold mt-2">Master of Fine Arts & Graphic Design</h5>
+                        <p class="text-gray-600">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-orange-500 pl-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Vestibulum University</h4>
+                        <p class="text-gray-500">2015-2019</p>
+                        <h5 class="text-md font-bold mt-2">Bachelor of Fine Arts & Graphic Design</h5>
+                        <p class="text-gray-600">Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas tempus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main id="portfolio" class="pt-20 lg:pt-28">
+            <section class="container mx-auto px-4"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <!-- Header Section -->
+                <div class="text-center mb-5">
+                    <h1 class="text-4xl font-bold mb-6">Portfolio</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        QUE system will earn later reprehendering at in an voluptate well case quam nihil molestiae consequatum vel illum qui dolorem.
+                    </p>
+                </div>
+        
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-2 md:gap-5 lg:gap-7 mb-12 transition duration-1000">
+                    <button class="filter-btn rounded-full hover:bg-yellow-400 px-2 active-filter"data-filter="all" data-aos="fade-up" data-aos-duration="1100">
+                        All Work
+                    </button>
+                    <button class="filter-btn rounded-full hover:bg-yellow-400 px-2" data-filter="web" data-aos="fade-up">
+                        Web Design
+                    </button>
+                    <button class="filter-btn rounded-full hover:bg-yellow-400 px-2" data-filter="graphics" data-aos="fade-up">
+                        Graphics
+                    </button>
+                    <button class="filter-btn rounded-full hover:bg-yellow-400 px-2" data-filter="branding" data-aos="fade-up">
+                        Branding
+                    </button>
+                </div>
+        
+                <!-- Portfolio Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Web Design Card -->
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="web">
+                        <div class="h-48 bg-blue-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 1.webp" alt="Dashboard Interface">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Modern Dashboard Interface</h3>
+                        <p class="text-gray-600">Moscenas fusinina multi interdum sed posuere consectetur erat at lobortis.</p>
+                    </div>
+
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="web">
+                        <div class="h-48 bg-blue-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 4.png" alt="Dashboard Interface">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Modern design Interface</h3>
+                        <p class="text-gray-600">Moscenas fusinina multi interdum sed posuere consectetur erat at lobortis.</p>
+                    </div>
+
+                    <!-- Graphics Card -->
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="graphics">
+                        <div class="h-48 bg-pink-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 5.png" alt="Brand Identity">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Creative Brand Identity</h3>
+                        <p class="text-gray-600">Vestibulum ill fuga porta felis eulerend temper at viquitate.</p>
+                    </div>
+
+                    <!-- Graphics Card (Fixed Category) -->
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="graphics">
+                        <div class="h-48 bg-green-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 6.webp" alt="Brand Identity">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Digital Art Collection</h3>
+                        <p class="text-gray-600">Cras mattis consectetur purus sit amet fermentum.</p>
+                    </div>
+
+                    <!-- Branding Card -->
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="branding">
+                        <div class="h-48 bg-purple-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 7.jpg">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Luxury Brand Package</h3>
+                        <p class="text-gray-600">Asiatica liscitus blandum nulla sed consectetur erat.</p>
+                    </div>
+
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="branding">
+                        <div class="h-48 bg-purple-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 8.jpg">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Create Luxury Brand Package</h3>
+                        <p class="text-gray-600">Asiatica liscitus blandum nulla sed consectetur erat.</p>
+                    </div>
+
+                    <div class="portfolio-card bg-white bg-opacity-50 rounded-xl p-6 shadow-md" data-category="branding">
+                        <div class="h-48 bg-purple-100 rounded-lg mb-4">
+                            <img class="h-full w-full object-cover rounded-lg" src="./images/img 9.jpg">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Luxury Menswear Brand Package</h3>
+                        <p class="text-gray-600">Asiatica liscitus blandum nulla sed consectetur erat.</p>
+                    </div>
+
+                </div>
+            </section>    
+            <section class="flex items-center justify-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <div class="w-full flex flex-col items-center mt-14 md:mt-10">
+                    <h2 class="text-3xl font-bold text-gray-800">Testimonials</h2>
+                    <p class="text-gray-500 text-center mt-2 w-full md:w-[70%] lg:w-[60%]">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+                    <div class="relative w-full max-w-5xl mt-6 overflow-hidden">
+                        <div id="testimonial-slider" class="flex transition-transform duration-[500ms] ease-in-out">
+                            <div class="min-w-[100%] m-auto p-5 bg-yellow-300 bg-opacity-25 shadow-lg rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center space-x-6 group-hover:animate-none">
+                                <div class="w-full order-2 md:order-1 lg:order-1">
+                                    <h3 class="text-lg font-bold text-gray-800 py-7">Nemo enim ipsam voluptatem</h3>
+                                    <p class="text-gray-500 text-sm">Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</p>
+                                    <p class="mt-5 text-gray-600 italic">Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum. Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.</p>
+                                    <div class="w-full mt-6 flex items-center gap-3">
+                                        <img class="w-[15%] rounded-full group-hover:animate-none" src="./images/image 1.jpg" alt="">
+                                        <span class="">
+                                            <span class="font-semibold">Json Davis</span>
+                                            <p class="text-gray-500">Designer</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="w-[90%] order-1 md:order-2 lg:order-2">
+                                    <img src="./images/image 1.jpg" class="rounded-lg w-[100%] m-auto" alt="Testimonial Image">
+                                </div>
+                            </div>
+
+                            <div class="min-w-[100%] m-auto p-5 bg-yellow-300 bg-opacity-25 shadow-lg rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center space-x-6 group-hover:animate-none">
+                                <div class="w-full order-2 md:order-1 lg:order-1">
+                                    <h3 class="text-lg font-bold text-gray-800 py-7">Impedit dolor facilis nulla</h3>
+                                    <p class="text-gray-500 text-sm">Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+                                    <p class="mt-5 text-gray-600 italic">Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est voluptatibus architecto laborum.</p>
+                                    <div class="w-full mt-6 flex items-center gap-3">
+                                        <img class="w-[15%] rounded-full group-hover:animate-none" src="./images/image 2.jpg" alt="">
+                                        <span class="">
+                                            <span class="font-semibold">Jena Karlis</span>
+                                            <p class="text-gray-500">Store Owner</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="w-[90%] order-1 md:order-2 lg:order-2">
+                                    <img src="./images/image 2.jpg" class="rounded-lg w-[100%] m-auto" alt="Testimonial Image">
+                                </div>
+                            </div>
+
+                            <div class="min-w-[100%] m-auto p-5 bg-yellow-300 bg-opacity-25 shadow-lg rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center space-x-6 group-hover:animate-none">
+                                <div class="w-full order-2 md:order-1 lg:order-1">
+                                    <h3 class="text-lg font-bold text-gray-800 py-7">Labore nostrum eos impedit</h3>
+                                    <p class="text-gray-500 text-sm">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</p>
+                                    <p class="mt-5 text-gray-600 italic">Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita adipisci aut optio.</p>
+                                    <div class="w-full mt-6 flex items-center gap-3">
+                                        <img class="w-[15%] rounded-full group-hover:animate-none" src="./images/image 3.jpg" alt="">
+                                        <span class="">
+                                            <span class="font-semibold">Matt Brandon</span>
+                                            <p class="text-gray-500">Freelancer</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="w-[90%] order-1 md:order-2 lg:order-2">
+                                    <img src="./images/image 3.jpg" class="rounded-lg w-[100%] m-auto" alt="Testimonial Image">
+                                </div>
+                            </div>
+
+                            <div class="min-w-[100%] m-auto p-5 bg-yellow-300 bg-opacity-25 shadow-lg rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center space-x-6 group-hover:animate-none">
+                                <div class="w-full order-2 md:order-1 lg:order-1">
+                                    <h3 class="text-lg font-bold text-gray-800 py-7">Sed ut perspiciatis unde omnis</h3>
+                                    <p class="text-gray-500 text-sm">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                                    <p class="mt-5 text-gray-600 italic">Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis minus consequatur. Enim ut eos quo.</p>
+                                    <div class="w-full mt-6 flex items-center gap-3">
+                                        <img class="w-[15%] rounded-full group-hover:animate-none" src="./images/image 4.jpg" alt="">
+                                        <span class="">
+                                            <span class="font-semibold">Sara Wilsson</span>
+                                            <p class="text-gray-500">Client</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="w-[90%] order-1 md:order-2 lg:order-2">
+                                    <img src="./images/image 4.jpg" class="rounded-lg w-[100%] m-auto" alt="Testimonial Image">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="flex justify-center mt-4 space-x-4">
+                            <button id="prev-btn" class="py-1 px-6 text-white font-bold bg-gray-300 rounded-full hover:bg-gray-400">&#60;</button>
+                            <button id="next-btn" class="py-1 px-6 text-white font-bold bg-gray-300 rounded-full hover:bg-gray-400">&#62;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <main id="services" class="pt-20 lg:pt-28">
+            <section class="px-6 md:px-20"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">Services</h2>
+                    <p class="text-gray-500 mt-2 w-full md:w-full lg:w-[60%] m-auto">
+                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+                        consequatur vel illum qui dolorem
+                    </p>
+                </div>
+            
+                <div class="mt-12 flex flex-col lg:flex-row md:items-center">
+                    <div class="w-full">
+                        <h3 class="font-bold text-gray-800 text-3xl md:text-5xl lg:text-5xl text-center lg:text-left w-[100%]">
+                            Consectetur adipiscing elit sed do eiusmod tempor
+                        </h3>
+                        <p class="text-gray-500 mt-4 w-[90%]">
+                            Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit class aptent taciti sociosqu ad litora.
+                        </p>
+                        <button class="mt-6 px-6 py-2 border border-orange-400 text-orange-500 rounded-lg hover:bg-orange-400 hover:text-white transition">
+                            See all services
+                        </button>
+                    </div>
+            
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 md:mt-7">
+                        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                            <div class="text-orange-500 text-3xl">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="mt-4 text-lg font-semibold text-gray-800">Eget nulla facilisi etiam</h4>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                            <div class="text-orange-500 text-3xl">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <h4 class="mt-4 text-lg font-semibold text-gray-800">Duis aute irure dolor</h4>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor.
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                            <div class="text-orange-500 text-3xl">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <h4 class="mt-4 text-lg font-semibold text-gray-800">Excepteur sint occaecat</h4>
+                            <p class="text-gray-500 text-sm mt-2">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                            <div class="text-orange-500 text-3xl">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <h4 class="mt-4 text-lg font-semibold text-gray-800">Tempor incididunt ut labore</h4>
+                            <p class="text-gray-500 text-sm mt-2">
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="px-6 md:px-20 mt-14"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-orange-600">Frequently Asked Questions</h2>
+                    <p class="text-gray-500 mt-2 lg:w-[60%] m-auto">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+                </div>
+                
+                <div class="mt-12 max-w-3xl mx-auto">
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-45 p-4 rounded-md shadow-md hover:shadow-lg transition">
+                            <button class="flex justify-between w-full text-left text-orange-600 font-semibold" onclick="toggleFAQ(this)">
+                                <span>Non consectetur a erat nam at lectus urna duis?</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <p class="text-gray-500 mt-2 hidden">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.</p>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-45 p-4 rounded-md shadow-md hover:shadow-lg transition">
+                            <button class="flex justify-between w-full text-left text-orange-600 font-semibold" onclick="toggleFAQ(this)">
+                                <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <p class="text-gray-500 mt-2 hidden">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi.</p>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-45 p-4 rounded-md shadow-md hover:shadow-lg transition">
+                            <button class="flex justify-between w-full text-left text-orange-600 font-semibold" onclick="toggleFAQ(this)">
+                                <span>Tempus quam pellentesque nec nam aliquam sem et tortor?</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <p class="text-gray-500 mt-2 hidden">Molestie a iaculis at erat pellentesque adipiscing commodo.</p>
+                        </div>
+                        
+                        <div class="bg-white bg-opacity-45 p-4 rounded-md shadow-md hover:shadow-lg transition">
+                            <button class="flex justify-between w-full text-left text-orange-600 font-semibold" onclick="toggleFAQ(this)">
+                                <span>Perspiciatis quod quo quos nulla quo illum ullam?</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <p class="text-gray-500 mt-2 hidden">Enim ea facilis quaerat voluptas quidem et dolorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       </main>
+
+       <section id="contact" class="pt-20 lg:pt-28"  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+            <div class="flex gap-7 flex-col md:flex-row justify-between items-center p-8 bg-yellow-200 bg-opacity-30 rounded-lg shadow-lg">
+            <div class="md:w-1/2 space-y-4">
+                    <h4 class="text-sm font-bold uppercase text-gray-500">Contact</h4>
+                    <h2 class="text-3xl font-bold text-gray-800">Nemo enim ipsam voluptatem quia voluptas aspernatur</h2>
+                    <p class="text-gray-600">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                    
+                    <div class="space-y-2 mt-4">
+                        <p class="flex items-center text-gray-700 hover:text-orange-500 transition"><i class="fas fa-envelope mr-2"></i> info@example.com</p>
+                        <p class="flex items-center text-gray-700 hover:text-orange-500 transition"><i class="fas fa-phone-alt mr-2"></i> +1 5589 55488 558</p>
+                        <p class="flex items-center text-gray-700 hover:text-orange-500 transition"><i class="fas fa-map-marker-alt mr-2"></i> A108 Adam Street, New York, NY 535022</p>
+                        <a href="#" class="text-orange-500 font-semibold hover:underline">Open Map →</a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white bg-opacity-55 p-6 rounded-lg shadow-md">
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 outline-none border rounded-md focus:ring-1 focus:ring-orange-200">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-md focus:ring-1 outline-none focus:ring-orange-200">
+                        <input type="text" placeholder="Subject" class="w-full p-3 border rounded-md focus:ring-1 outline-none focus:ring-orange-200">
+                        <textarea placeholder="Message" class="w-full p-3 border rounded-md focus:ring-1 outline-none focus:ring-orange-200 h-32"></textarea>
+                        <button type="submit" class="w-full bg-orange-500 text-white font-semibold py-3 rounded-md hover:bg-orange-600 transition">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+       </section> 
+
+       <footer class="w-full py-14">
+        <div class="w-full m-auto text-center">
+            <h3>© Copyright <span>CDX.Folio</span> All Rights Reserved</h3>
+            <div class="flex justify-center gap-4 mt-5">
+                <i class="fa-brands fa-youtube text-gray-600 text-xl border-2 bg-yellow-100 border-dashed duration-500 border-orange-300 py-2 px-3 hover:border-orange-400 hover:bg-orange-400 rounded-full"></i>
+                <i class="fa-brands fa-square-instagram text-gray-600 text-xl border-2 bg-yellow-100 border-dashed duration-500 border-orange-300 py-2 px-3 hover:border-orange-400 hover:bg-orange-400 rounded-full"></i>
+                <i class="fa-brands fa-facebook text-gray-600 text-xl border-2 bg-yellow-100 border-dashed duration-500 border-orange-300 py-2 px-3 hover:border-orange-400 hover:bg-orange-400 rounded-full"></i>
+                <i class="fa-brands fa-telegram text-gray-600 text-xl border-2 bg-yellow-100 border-dashed duration-500 border-orange-300 py-2 px-3 hover:border-orange-400 hover:bg-orange-400 rounded-full"></i>
+                <i class="fa-brands fa-github text-gray-600 text-xl border-2 bg-yellow-100 border-dashed duration-500 border-orange-300 py-2 px-3 hover:border-orange-400 hover:bg-orange-400 rounded-full"></i>
+            </div>
+            <div class="mt-5">Designed by<span class="text-cyan-500 font-bold"> tailwindcss</span></div>
+        </div>
+       </footer>
+        
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
